@@ -1,0 +1,50 @@
+.map-container {
+  width: 100%;
+  margin: 1rem;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  background: white;
+}
+
+.tree-popup {
+  min-width: 200px;
+}
+
+.tree-popup h3 {
+  color: #22c55e;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.tree-popup p {
+  margin: 0.5rem 0;
+  font-size: 0.9rem;
+  color: #4a5568;
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.status-healthy {
+  background-color: #d1fae5;
+  color: #065f46;
+}
+
+.status-needs_attention {
+  background-color: #fee2e2;
+  color: #991b1b;
+}
+
+.coordinates {
+  font-size: 0.8rem;
+  color: #718096;
+  font-family: monospace;
+}
+

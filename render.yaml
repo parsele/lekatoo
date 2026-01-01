@@ -1,0 +1,29 @@
+services:
+  # Backend API Service
+  - type: web
+    name: tree-tracker-api
+    env: node
+    plan: free
+    buildCommand: cd server && npm install
+    startCommand: cd server && node index.js
+    envVars:
+      - key: PORT
+        value: 10000
+      - key: NODE_ENV
+        value: production
+    healthCheckPath: /api/stats
+
+  # Frontend Service
+  - type: web
+    name: tree-tracker-frontend
+    env: static
+    buildCommand: cd client && npm install && npm run build
+    staticPublishPath: ./client/build
+    envVars:
+      - key: REACT_APP_API_URL
+        fromService:
+          name: tree-tracker-api
+          type: web
+          property: host
+        value: https://tree-tracker-api.onrender.com/api
+
