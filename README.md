@@ -1,6 +1,6 @@
 # 🌳 Green Planet Tree Tracker
 
-A modern web application for tracking trees planted in Amboseli, Kenya. This application allows you to record, view, and manage tree planting data with an interactive map interface and comprehensive admin dashboard.
+A modern web application for tracking trees planted in parts ofKenya. This application show  you to record, view, and manage tree planting data with an interactive map interface and comprehensive admin dashboard.
 
 ## Features
 
